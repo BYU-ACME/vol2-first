@@ -197,7 +197,7 @@ class BST:
             current_level = next_level
         return "\n".join([str(x) for x in out])
 
-    def draw(self):
+    def draw(self, filename):
         """Use NetworkX and Matplotlib to visualize the tree."""
         if self.root is None:
             return
@@ -216,7 +216,7 @@ class BST:
         # Plot the graph. This requires graphviz_layout (pygraphviz).
         nx.draw(G, pos=graphviz_layout(G, prog="dot"), arrows=True,
                 with_labels=True, node_color="C1", font_size=8)
-        plt.show()
+        plt.savefig(filename)
 
 
 class AVL(BST):

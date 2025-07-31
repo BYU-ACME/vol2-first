@@ -34,8 +34,7 @@
           "**/content": true,
           "**/__pycache__": true,
           "**/*.pyc": true,
-          "**/validate_driver.txt": true,
-          "**/download_data.sh": true
+          "**/validate_driver.txt": true
         },
         "github.copilot.enable": false,
         "github.copilot-chat.enable": false,
